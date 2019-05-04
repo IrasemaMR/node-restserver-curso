@@ -27,8 +27,15 @@ let urlDB
 // if (process.env.NODE_ENV === 'dev') {
 // urlDB = 'mongodb://localhost:27017/cafe'
 // } else {
-urlDB = 'mongodb://cafe-user:admin123456@ds135876.mlab.com:35876/irasema-cafe'
-    //urlDB = process.env.MONGO_URI
-    // }
+urlDB = 'mongodb+srv://irasema:Imr955722659*@cluster0-v9rla.mongodb.net/cafe'
+
+//urlDB = 'mongodb://cafe-user:admin123456@ds135876.mlab.com:35876/irasema-cafe'
+//urlDB = process.env.MONGO_URI
+// }
 
 process.env.URLDB = urlDB
+
+// =================
+// Google Client ID
+// =================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '753511455011-27o5jgevokk1ep96ehdpjoo3fa4cm8t5.apps.googleusercontent.com'
